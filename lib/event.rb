@@ -6,4 +6,14 @@ class Event
     @name = name
     @food_trucks = []
   end
+
+  def add_food_truck(truck)
+    @food_trucks << truck
+  end
+
+  def food_trucks_that_sell(item)
+    @food_trucks.find_all do |item|
+      food_trucks.inventory.keys.include?(item)
+    end
+  end
 end
