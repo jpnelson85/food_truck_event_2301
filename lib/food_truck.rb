@@ -4,7 +4,7 @@ class FoodTruck
 
   def initialize(name)
     @name = name
-    @inventory = {}
+    @inventory = Hash.new(0)
   end
 
   def check_stock(item)
@@ -12,5 +12,7 @@ class FoodTruck
     in_stock == nil ? 0 : in_stock
   end
 
-  
+  def stock(item, quantity)
+    @inventory[item] += quantity
+  end
 end
