@@ -18,6 +18,9 @@ class Event
   end
 
   def food_truck_names
+    f_truck_names = []
     @food_trucks.map(:name)
+    f_truck_names << :name
+    f_truck_names
   end
 end
