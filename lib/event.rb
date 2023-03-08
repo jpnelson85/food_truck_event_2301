@@ -19,8 +19,8 @@ class Event
 
   def food_truck_names
     f_truck_names = []
-    @food_trucks.map(:name)
-    f_truck_names << :name
+    @food_trucks.map.keys(name)
+    f_truck_names << name
     f_truck_names
   end
 end
