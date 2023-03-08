@@ -16,4 +16,6 @@ class Event
       truck.inventory.keys.include?(item)
     end
   end
+
+  
 end
